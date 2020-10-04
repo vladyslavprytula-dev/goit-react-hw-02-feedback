@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { theme } from "./Section.module.css";
+import styles from "./Section.module.css";
 
 const Section = ({ children, title }) => (
   <>
-    <h2>{title}</h2>
-    <div>{children}</div>
+    <h2 className={styles.theme}>{title}</h2>
+    <div className={styles.div}>{children}</div>
   </>
 );
 
@@ -15,4 +15,3 @@ Section.protoTypes = {
 };
 
 export default Section;
-// className={theme}

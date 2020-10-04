@@ -33,7 +33,7 @@ class App extends Component {
             onLeaveFeedback={this.currentFeedback}
           />
         </Section>
-        <Section title="Please live feedback">
+        <Section title="Statistics">
           {this.countTotalFeedback() ? (
             <Statistics
               good={good}

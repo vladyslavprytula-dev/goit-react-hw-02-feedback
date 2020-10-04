@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { button, box } from "./FeedbackOptions.module.css";
+import { button, box } from "./FeedbackOptions.module.css";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
-  <div>
+  <div className={box}>
     {options.map((option) => (
       <button
         type="button"
         name={option}
         key={option}
         onClick={onLeaveFeedback}
+        className={button}
       >
         {option}
       </button>
@@ -23,6 +24,3 @@ FeedbackOptions.protoTypes = {
 };
 
 export default FeedbackOptions;
-
-// className={box}
-// className={button}
